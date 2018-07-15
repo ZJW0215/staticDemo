@@ -1,0 +1,265 @@
+/* 顶部导航样式 */
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user{
+    float: left;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px;
+}
+
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* 头部logo */
+.header .logo{
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+}
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+/* 输入框 */
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+/* 搜索按钮样式 */
+.header .search-con .search-btn{
+    position: absolute;
+    height: 44px;
+    width: 80px;
+}
+
+/* 左边keywords样式 */
+.keywords-list{
+    float: left;
+    padding: 10px 0;
+    margin-right: 10px;
+    width: 240px;
+    height: 350px;
+    background: #666;
+    color: #fff;
+}
+.keywords-list .keywords-item{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.keywords-list .keywords-item:hover{
+    background: #999;
+}
+.keywords-list .keywords-item .link{
+    margin-right: 6px;
+    color: #fff;
+}
+.keywords-list .keywords-item .link:hover{
+    color: #c60023;
+}
+
+/* 右边banner-con样式 */
+.banner-con{
+    float: left;
+    width: 830px;
+    height: 370px;
+    background: #eee;
+}
+.banner-con .banner {
+    position: relative;
+    overflow: hidden;
+    width: 830px;
+    height: 370px;
+}
+.banner ul{
+    position: absolute;
+    width: 5810px;
+    left: -830px;
+    height: 370px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.banner li {
+    list-style: none;
+}
+.banner ul li {
+    float: left;
+}
+.banner-con .banner-img{
+    width: 100%;
+    height: 370px;
+}
+
+/* 上一张下一张图标按钮样式 */
+.banner-con .banner .banner-arrow{
+    position: absolute;
+    top: 160px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    background: #ccc;
+    background: rgba(0, 0, 0, .2);
+}
+.banner-con .banner .banner-arrow:hover{
+    background: #aaa;
+    background: rgba(0, 0, 0, .5);
+}
+/* 上一张按钮 */
+.banner-con .banner .banner-arrow.prev{
+    left: 0;
+}
+.banner-con .banner .banner-arrow .angle-left{
+    position: absolute;
+    top: 13px;
+    left: -6px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+/* 下一张按钮 */
+.banner-con .banner .banner-arrow.next{
+    right: 0;
+}
+.banner-con .banner .banner-arrow .angle-right{
+    position: absolute;
+    top: 13px;
+    right: -6px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+/* 引导点样式 */
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+/* floor的样式 */
+.floor-wrap .floor-title{
+    height: 50px;
+    line-height: 50px;
+    color: #d58717;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #d58717;
+}
+/* 使用伪类更改楼层颜色及底部border */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #3b838c;
+    border-bottom: 1px solid #3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color: #e63938;
+    border-bottom: 1px solid #e63938;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color: #488bad;
+    border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 1px solid #642663;
+}
+
+/* ul.floor-list的样式 */
+.floor-wrap .floor-list{
+    margin-right: -20px;  /* 使得ul能够包含item */
+    overflow: hidden;
+}
+/* li.floor-item的样式 */
+.floor-wrap .floor-list .floor-item{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 220px;
+    margin: 15px 20px 15px 0;
+    cursor: pointer;
+    background: #fff;
+}
+.floor-wrap .floor-list .floor-item:hover{
+    box-shadow: 1px 1px 7px #ddd;
+}
+/* 图片对应的标题 */
+.floor-wrap .floor-list .floor-item .floor-text{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 15px;
+    color: #555;
+}
+.floor-wrap .floor-list .floor-item .floor-img{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 80%;
+    height: 75%;
+}
+
+
+/* 底部样式 */
+.footer{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
